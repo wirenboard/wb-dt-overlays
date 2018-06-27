@@ -1,0 +1,11 @@
+Source: wb-dt-overlays
+Maintainer: Nikita Maslov <n.maslov@contactless.ru>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9), pkg-config, make, device-tree-compiler
+
+Package: wb-dt-overlays
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Device tree overlays for Wiren Board devices

@@ -1,0 +1,14 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    description = "Test overlay";
+    compatible = "contactless,imx6ul-wirenboard61";
+
+    fragment@0 {
+        target = <&fec2>;
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};
