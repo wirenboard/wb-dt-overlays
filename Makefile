@@ -8,10 +8,10 @@ DTBOS:=$(patsubst $(SOURCES_DIR)/%.dtso,$(DTBOS_DIR)/%.dtbo,$(SOURCES))
 
 INSTALL_DEST_DIR=$(DESTDIR)/boot/overlays
 
-$(DTBOS_DIR):
-	mkdir $@
-
 all: dtbos
+
+$(DTBOS_DIR):
+	mkdir -p $@
 
 dtbos: $(DTBOS)
 
@@ -23,6 +23,6 @@ install: dtbos
 	install -m 0644 -t $(INSTALL_DEST_DIR) $(DTBOS)
 
 clean:
-	rm -rf $(DEST_DIR)
+	rm -rf $(DTBOS_DIR)
 
 .PHONY: all dtbos install clean
