@@ -3,7 +3,7 @@ Maintainer: Nikita Maslov <n.maslov@contactless.ru>
 Section: misc
 Priority: optional
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 9), pkg-config, make, device-tree-compiler
+Build-Depends: debhelper (>= 9), pkg-config, build-essential, device-tree-compiler
 
 Package: wb-dt-overlays
 Architecture: all
