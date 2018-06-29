@@ -1,0 +1,14 @@
+/*
+ * Common parameters for SIM800 GSM modems
+ */
+
+/ {
+    fragment@110 {
+        target-path = "/wirenboard/gsm";
+
+        __overlay__ {
+            model = "sim800";
+            modes = "edge", "gprs";
+        };
+    };
+};

@@ -1,0 +1,5 @@
+/dts-v1/;
+/plugin/;
+
+#include "wb6-gsm.dtsi"
+#include "gsm-m660a.dtsi"

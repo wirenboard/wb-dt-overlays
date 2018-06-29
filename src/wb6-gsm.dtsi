@@ -1,0 +1,29 @@
+/*
+ * Standard definitions for all GSM overlays for WB6
+ */
+
+/ {
+    compatible = "contactless,imx6ul-wirenboard61", "contactless,imx6ul-wirenboard60", "contactless,imx6ul-wirenboard-evk", "fsl,imx6ul-14x14-evk", "fsl,imx6ul";
+
+    /* Enable UART for GSM module */
+    fragment@100 {
+        target = <&uart6>;
+
+        __overlay__ {
+            status = "okay";
+        };
+    };
+
+    /* Fill in /wirenboard node with GPIO configuration */
+    fragment@101 {
+        target-path = "/wirenboard/gsm";
+
+        __overlay__ {
+            power-type = <2>;
+            gpio-power = <&gpio4 24 0>;
+            gpio-pwrkey = <&gpio3 20 0>;
+            gpio-status = <&gpio3 19 1>;
+            gpio-simselect = <&gpio3 24 0>;
+        };
+    };
+};

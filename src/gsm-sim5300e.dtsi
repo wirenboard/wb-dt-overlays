@@ -1,0 +1,14 @@
+/*
+ * Common parameters for SIM5300e GSM modems
+ */
+
+/ {
+    fragment@110 {
+        target-path = "/wirenboard/gsm";
+
+        __overlay__ {
+            model = "sim5300e";
+            modes = "3g", "edge", "gprs";
+        };
+    };
+};

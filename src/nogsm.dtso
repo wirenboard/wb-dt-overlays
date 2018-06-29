@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * Dummy overlay which leave GSM turned off and
+ * tells about it in /wirenboard section
+ */
+
+/ {
+    fragment@0 {
+        target-path = "/wirenboard/gsm";
+
+        __overlay__ {
+            model = "none";
+        };
+    };
+};
