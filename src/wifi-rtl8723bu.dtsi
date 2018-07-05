@@ -1,0 +1,26 @@
+/*
+ * Common parameters for RTL8723BU Wi-Fi module
+ */
+
+#include "wifi.dtsi"
+#include "bluetooth.dtsi"
+
+/ {
+    /* Wi-Fi and Bluetooth description */
+    fragment@210 {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            wifi {
+                model = "RTL8723BU";
+                type = "n", "g", "b";
+                frequencies-mhz = <2400>;
+            };
+            bluetooth {
+                model = "RTL8723BU";
+                version = "4.0";
+                low-energy;
+            };
+        };
+    };
+};

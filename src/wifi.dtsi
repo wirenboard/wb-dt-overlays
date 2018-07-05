@@ -1,0 +1,15 @@
+/*
+ * Common parameters for Wi-Fi module
+ */
+
+/ {
+    fragment@200 {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            wifi {
+                status = "okay";
+            };
+        };
+    };
+};

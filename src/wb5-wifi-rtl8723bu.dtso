@@ -1,0 +1,4 @@
+/dts-v1/;
+/plugin/;
+
+#include "wifi-rtl8723bu.dtsi"

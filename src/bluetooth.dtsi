@@ -1,0 +1,15 @@
+/*
+ * Common parameters for Bluetooth module
+ */
+
+/ {
+    fragment@300 {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            bluetooth {
+                status = "okay";
+            };
+        };
+    };
+};

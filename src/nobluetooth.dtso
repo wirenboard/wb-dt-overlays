@@ -2,7 +2,7 @@
 /plugin/;
 
 /*
- * Dummy overlay which leaves GSM turned off and
+ * Dummy overlay which leaves Bluetooth turned off and
  * tells about it in /wirenboard section
  */
 
@@ -11,7 +11,7 @@
         target-path = "/wirenboard";
 
         __overlay__ {
-            gsm {
+            bluetooth {
                 status = "disabled";
                 model = "none";
             };

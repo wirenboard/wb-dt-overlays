@@ -4,11 +4,13 @@
 
 / {
     fragment@110 {
-        target-path = "/wirenboard/gsm";
+        target-path = "/wirenboard";
 
         __overlay__ {
-            model = "sim5300e";
-            modes = "3g", "edge", "gprs";
+            gsm {
+                model = "sim5300e";
+                type = "3g", "edge", "gprs";
+            };
         };
     };
 };

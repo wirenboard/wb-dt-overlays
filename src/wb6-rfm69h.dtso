@@ -1,0 +1,39 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * Standard definitions for RFM69H for WB6
+ */
+
+#include "rfm69h.dtsi"
+
+/ {
+    compatible = "contactless,imx6ul-wirenboard61", "contactless,imx6ul-wirenboard60", "contactless,imx6ul-wirenboard-evk", "fsl,imx6ul-14x14-evk", "fsl,imx6ul";
+
+    /* Enable SPI for RFM module and add spidev node */
+    fragment@0 {
+        target = <&spi_rfm69>;
+
+        __overlay__ {
+            status = "okay";
+            #address-cells = <1>;
+            #size-cells = <0>;
+
+            spidev@0 {
+			    compatible = "hoperf,rfm69w";
+			    spi-max-frequency = <10000>;
+			    reg = <0>;
+		    };
+        };
+    };
+
+    fragment@1 {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            rfm {
+                status = "okay";
+            };
+        };
+    };
+};

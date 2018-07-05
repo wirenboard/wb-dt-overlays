@@ -1,0 +1,15 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    description = "Enable eth1 on WB5";
+    compatible = "contactless,imx6ul-wirenboard58";
+
+    fragment@0 {
+        target-path = "/ahb@80080000/ethernet@800f4000";
+
+        __overlay__ {
+            status = "okay";
+        };
+    };
+};

@@ -4,11 +4,13 @@
 
 / {
     fragment@110 {
-        target-path = "/wirenboard/gsm";
+        target-path = "/wirenboard";
 
         __overlay__ {
-            model = "m660a";
-            modes = "gprs";
+            gsm {
+                model = "m660a";
+                type = "gprs";
+            };
         };
     };
 };

@@ -2,13 +2,13 @@
 /plugin/;
 
 / {
-    description = "Test overlay";
+    description = "Enable eth1 on WB6";
     compatible = "contactless,imx6ul-wirenboard61";
 
     fragment@0 {
         target = <&fec2>;
         __overlay__ {
-            status = "disabled";
+            status = "okay";
         };
     };
 };

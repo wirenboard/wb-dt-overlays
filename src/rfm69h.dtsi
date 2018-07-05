@@ -1,0 +1,16 @@
+/*
+ * Common parameters for RFM69H modules
+ */
+
+/ {
+    fragment@401 {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            rfm {
+                model = "rfm69h";
+                frequencies-mhz = <433>;
+            };
+        };
+    };
+};
