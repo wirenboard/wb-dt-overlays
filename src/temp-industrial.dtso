@@ -7,9 +7,9 @@
 
         __overlay__ {
             temperature {
-                grade = "commercial";
-                min = "0";
-                max = "70";
+                grade = "industrial";
+                min = "-40";
+                max = "85";
             };
         };
     };
