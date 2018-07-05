@@ -2,7 +2,7 @@
 /plugin/;
 
 / {
-    fragment@0 {
+    fragment-temp-industrial {
         target-path = "/wirenboard";
 
         __overlay__ {

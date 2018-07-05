@@ -7,7 +7,7 @@
  */
 
 / {
-    fragment@0 {
+    fragment-nogsm {
         target-path = "/wirenboard";
 
         __overlay__ {

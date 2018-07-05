@@ -3,11 +3,11 @@
  */
 
 / {
-    fragment@401 {
+    fragment-radio-rfm69h-description {
         target-path = "/wirenboard";
 
         __overlay__ {
-            rfm {
+            radio {
                 model = "rfm69h";
                 frequencies-mhz = <433>;
             };

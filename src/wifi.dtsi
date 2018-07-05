@@ -3,7 +3,7 @@
  */
 
 / {
-    fragment@200 {
+    fragment-wifi-status {
         target-path = "/wirenboard";
 
         __overlay__ {

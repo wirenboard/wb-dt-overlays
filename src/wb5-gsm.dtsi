@@ -6,7 +6,7 @@
     compatible = "contactless,imx28-wirenboard58","contactless,imx28-wirenboard55", "contactless,imx28-wirenboard52", "contactless,imx28-wirenboard50", "fsl,imx28";
 
     /* Enable UART for GSM module */
-    fragment@100 {
+    fragment-gsm-wb5-uart {
         target = <&auart0>;
 
         __overlay__ {
@@ -14,7 +14,7 @@
         };
     };
 
-    fragment@101 {
+    fragment-gsm-wb5-status {
         target-path = "/wirenboard";
 
         __overlay__ {

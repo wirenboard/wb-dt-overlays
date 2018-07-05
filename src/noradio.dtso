@@ -7,11 +7,11 @@
  */
 
 / {
-    fragment@0 {
+    fragment-noradio {
         target-path = "/wirenboard";
 
         __overlay__ {
-            rfm {
+            radio {
                 status = "disabled";
                 model = "none";
             };

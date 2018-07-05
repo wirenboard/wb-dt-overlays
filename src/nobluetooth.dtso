@@ -7,7 +7,7 @@
  */
 
 / {
-    fragment@0 {
+    fragment-nobt {
         target-path = "/wirenboard";
 
         __overlay__ {

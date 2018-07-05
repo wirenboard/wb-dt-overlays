@@ -7,7 +7,7 @@
 
 / {
     /* Wi-Fi and Bluetooth description */
-    fragment@210 {
+    fragment-wifi-rtl8723bu-description {
         target-path = "/wirenboard";
 
         __overlay__ {

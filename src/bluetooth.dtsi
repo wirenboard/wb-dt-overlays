@@ -3,7 +3,7 @@
  */
 
 / {
-    fragment@300 {
+    fragment-bt-status {
         target-path = "/wirenboard";
 
         __overlay__ {

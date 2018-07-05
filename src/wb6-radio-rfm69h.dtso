@@ -2,17 +2,17 @@
 /plugin/;
 
 /*
- * Standard definitions for RFM69H for WB5
+ * Standard definitions for RFM69H for WB6
  */
 
-#include "rfm69h.dtsi"
+#include "radio-rfm69h.dtsi"
 
 / {
-    compatible = "contactless,imx28-wirenboard58","contactless,imx28-wirenboard55", "contactless,imx28-wirenboard52";
+    compatible = "contactless,imx6ul-wirenboard61", "contactless,imx6ul-wirenboard60", "contactless,imx6ul-wirenboard-evk", "fsl,imx6ul-14x14-evk", "fsl,imx6ul";
 
     /* Enable SPI for RFM module and add spidev node */
-    fragment@0 {
-        target = <&ssp1gpio>;
+    fragment-wb6-rfm96h-spi {
+        target = <&spi_rfm69>;
 
         __overlay__ {
             status = "okay";
@@ -27,11 +27,11 @@
         };
     };
 
-    fragment@1 {
+    fragment-wb6-rfm69h-status {
         target-path = "/wirenboard";
 
         __overlay__ {
-            rfm {
+            radio {
                 status = "okay";
             };
         };

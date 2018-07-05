@@ -3,7 +3,7 @@
  */
 
 / {
-    fragment@110 {
+    fragment-gsm-sim5300e-description {
         target-path = "/wirenboard";
 
         __overlay__ {

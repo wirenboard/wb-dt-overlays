@@ -6,7 +6,7 @@
     compatible = "contactless,imx6ul-wirenboard61", "contactless,imx6ul-wirenboard60", "contactless,imx6ul-wirenboard-evk", "fsl,imx6ul-14x14-evk", "fsl,imx6ul";
 
     /* Enable UART for GSM module */
-    fragment@100 {
+    fragment-wb6-gsm-uart {
         target = <&uart6>;
 
         __overlay__ {
@@ -14,7 +14,7 @@
         };
     };
 
-    fragment@101 {
+    fragment-wb6-gsm-status {
         target-path = "/wirenboard";
 
         __overlay__ {

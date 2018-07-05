@@ -3,7 +3,7 @@
  */
 
 / {
-    fragment@110 {
+    fragment-gsm-m660a-description {
         target-path = "/wirenboard";
 
         __overlay__ {
