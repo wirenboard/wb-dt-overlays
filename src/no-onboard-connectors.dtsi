@@ -1,0 +1,27 @@
+/ {
+    fragment-no-onboard-connectors-meta {
+        target-path = "/wirenboard/gpios";
+
+        __overlay__ {
+            A1_OUT {
+                status = "disabled";
+            };
+
+            A2_OUT {
+                status = "disabled";
+            };
+            
+            A3_OUT {
+                status = "disabled";
+            };
+
+            A4_OUT {
+                status = "disabled";
+            };
+            
+            5V_OUT {
+                status = "disabled";
+            };
+        };
+    };
+};

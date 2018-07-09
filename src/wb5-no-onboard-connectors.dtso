@@ -1,0 +1,124 @@
+/dts-v1/;
+/plugin/;
+
+#include "no-onboard-connectors.dtsi"
+
+/ {
+    compatible = "contactless,imx28-wirenboard58","contactless,imx28-wirenboard55", "contactless,imx28-wirenboard52", "contactless,imx28-wirenboard50", "fsl,imx28";
+
+    fragment-no-onboard-connectors-wb5-meta {
+        target-path = "/wirenboard/gpios";
+
+        __overlay__ {
+            A1_IN {
+                status = "disabled";
+            };
+
+            A2_IN {
+                status = "disabled";
+            };
+            
+            A3_IN {
+                status = "disabled";
+            };
+
+            A4_IN {
+                status = "disabled";
+            };
+            
+            R1_IN {
+                status = "disabled";
+            };
+        };
+    };
+
+    fragment-no-onboard-connectors-hog-gpio0 {
+        target = <&gpio0>;
+
+        __overlay__ {
+            wb-disabled-pins-a1-out {
+                gpio-hog;
+                gpios = <26 0>;
+                input;
+                line-name = "a1-out-disabled";
+            };
+            
+            wb-disabled-pins-a2-out {
+                gpio-hog;
+                gpios = <16 0>;
+                input;
+                line-name = "a2-out-disabled";
+            };
+            
+            wb-disabled-pins-a3-out {
+                gpio-hog;
+                gpios = <24 0>;
+                input;
+                line-name = "a3-out-disabled";
+            };
+            
+            wb-disabled-pins-a4-out {
+                gpio-hog;
+                gpios = <20 0>;
+                input;
+                line-name = "a4-out-disabled";
+            };
+            
+            wb-disabled-pins-a1-in {
+                gpio-hog;
+                gpios = <6 0>;
+                input;
+                line-name = "a1-in-disabled";
+            };
+            
+            wb-disabled-pins-a2-in {
+                gpio-hog;
+                gpios = <7 0>;
+                input;
+                line-name = "a2-in-disabled";
+            };
+            
+            wb-disabled-pins-a3-in {
+                gpio-hog;
+                gpios = <28 0>;
+                input;
+                line-name = "a3-in-disabled";
+            };
+            
+            wb-disabled-pins-a4-in {
+                gpio-hog;
+                gpios = <27 0>;
+                input;
+                line-name = "a4-in-disabled";
+            };
+            
+            wb-disabled-pins-r1-in {
+                gpio-hog;
+                gpios = <5 0>;
+                input;
+                line-name = "r1-in-disabled";
+            };
+        };
+    };
+
+    fragment-no-onboard-connectors-hog-gpio2 {
+        target = <&gpio2>;
+
+        __overlay__ {
+            wb-disabled-pins-5vout-in {
+                gpio-hog;
+                gpios = <14 0>;
+                input;
+                line-name = "5vout-disabled";
+            };
+        };
+    };
+    
+    fragment-wb5-noonewire {
+        target-path = "/onewire@0";
+
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};
