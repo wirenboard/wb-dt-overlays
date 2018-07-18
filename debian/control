@@ -7,5 +7,5 @@ Build-Depends: debhelper (>= 9), pkg-config, build-essential, device-tree-compil
 
 Package: wb-dt-overlays
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-image-wb2 (>= 4.9+wb20180718154205) | linux-image-wb6 (>= 4.9+wb20180718154205)
 Description: Device tree overlays for Wiren Board devices
