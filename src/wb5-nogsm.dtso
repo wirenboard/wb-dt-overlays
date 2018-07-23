@@ -1,0 +1,14 @@
+/dts-v1/;
+/plugin/;
+
+#include "nogsm.dtsi"
+
+/ {
+    fragment-wb5-nogsm {
+        target = <&auart0>;
+
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};

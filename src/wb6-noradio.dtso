@@ -1,0 +1,14 @@
+/dts-v1/;
+/plugin/;
+
+#include "noradio.dtsi"
+
+/ {
+    fragment-wb6-noradio {
+        target = <&spi_rfm69>;
+        
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};

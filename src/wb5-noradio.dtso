@@ -1,0 +1,14 @@
+/dts-v1/;
+/plugin/;
+
+#include "noradio.dtsi"
+
+/ {
+    fragment-wb5-noradio {
+        target = <&ssp1gpio>;
+        
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};
