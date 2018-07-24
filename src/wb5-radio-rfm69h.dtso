@@ -5,10 +5,19 @@
  * Standard definitions for RFM69H for WB5
  */
 
-#include "radio-rfm69h.dtsi"
-
 / {
     compatible = "contactless,imx28-wirenboard58","contactless,imx28-wirenboard55", "contactless,imx28-wirenboard52";
+
+    fragment-radio-rfm69h-description {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            radio {
+                model = "rfm69h";
+                frequencies-mhz = <433>;
+            };
+        };
+    };
 
     /* Enable SPI for RFM module and add spidev node */
     fragment-wb5-rfm69h-spi {

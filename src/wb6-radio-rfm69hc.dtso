@@ -1,0 +1,21 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * Standard definitions for RFM69HC for WB6
+ */
+
+#include "wb6-radio-rfm69.dtsi"
+
+/ {
+    fragment-radio-rfm69hc-description {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            radio {
+                model = "rfm69hc";
+                frequencies-mhz = <433>;
+            };
+        };
+    };
+};

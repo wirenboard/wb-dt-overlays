@@ -1,12 +1,3 @@
-/dts-v1/;
-/plugin/;
-
-/*
- * Standard definitions for RFM69H for WB6
- */
-
-#include "radio-rfm69h.dtsi"
-
 / {
     compatible = "contactless,imx6ul-wirenboard61", "contactless,imx6ul-wirenboard60", "contactless,imx6ul-wirenboard-evk", "fsl,imx6ul-14x14-evk", "fsl,imx6ul";
 
