@@ -1,17 +1,14 @@
-/dts-v1/;
-/plugin/;
-
 /*
- * Dummy overlay which leaves radio module turned off and
+ * Dummy overlay which leaves GSM turned off and
  * tells about it in /wirenboard section
  */
 
 / {
-    fragment-noradio {
+    fragment-nogsm {
         target-path = "/wirenboard";
 
         __overlay__ {
-            radio {
+            gsm {
                 status = "disabled";
                 model = "none";
             };

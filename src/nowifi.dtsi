@@ -1,17 +1,14 @@
-/dts-v1/;
-/plugin/;
-
 /*
- * Dummy overlay which leaves Bluetooth turned off and
+ * Dummy overlay which leaves Wi-Fi turned off and
  * tells about it in /wirenboard section
  */
 
 / {
-    fragment-nobt {
+    fragment-nowifi {
         target-path = "/wirenboard";
 
         __overlay__ {
-            bluetooth {
+            wifi {
                 status = "disabled";
                 model = "none";
             };

@@ -1,3 +1,9 @@
+wb-dt-overlays (1.1) stable; urgency=medium
+
+  * create overlays to disable peripherals in WB5 and WB6
+
+ -- Nikita Maslov <n.maslov@contactless.ru>  Tue, 24 Jul 2018 14:47:25 +0300
+
 wb-dt-overlays (1.0) stable; urgency=medium
 
   * Initial release

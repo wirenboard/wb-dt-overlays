@@ -1,17 +1,14 @@
-/dts-v1/;
-/plugin/;
-
 /*
- * Dummy overlay which leaves Wi-Fi turned off and
+ * Dummy overlay which leaves radio module turned off and
  * tells about it in /wirenboard section
  */
 
 / {
-    fragment-nowifi {
+    fragment-noradio {
         target-path = "/wirenboard";
 
         __overlay__ {
-            wifi {
+            radio {
                 status = "disabled";
                 model = "none";
             };

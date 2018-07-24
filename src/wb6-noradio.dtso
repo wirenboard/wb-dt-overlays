@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+
+#include "noradio.dtsi"
+
+/ {
+    description = "Disable radio module on WB6";
+    compatible = "contactless,imx6ul-wirenboard61";
+
+    fragment-wb6-noradio {
+        target = <&spi_rfm69>;
+        
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};

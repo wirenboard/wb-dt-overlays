@@ -1,0 +1,14 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    description = "Disable eth1 on WB6";
+    compatible = "contactless,imx6ul-wirenboard61";
+
+    fragment-wb6-eth1 {
+        target = <&fec2>;
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};

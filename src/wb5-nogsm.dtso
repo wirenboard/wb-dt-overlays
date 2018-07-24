@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+
+#include "nogsm.dtsi"
+
+/ {
+    description = "Disable GSM on WB5";
+    compatible = "contactless,imx28-wirenboard58,imx28-wirenboard56,imx28-wirenboard52,imx28-wirenboard50";
+
+    fragment-wb5-nogsm {
+        target = <&auart0>;
+
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};
