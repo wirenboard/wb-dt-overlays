@@ -1,0 +1,15 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    description = "Disable eth1 on WB5";
+    compatible = "contactless,imx28-wirenboard58";
+
+    fragment-wb5-eth1 {
+        target-path = "/ahb@80080000/ethernet@800f4000";
+
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};
