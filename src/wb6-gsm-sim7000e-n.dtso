@@ -1,0 +1,6 @@
+
+/dts-v1/;
+/plugin/;
+
+#include "wb6-gsm.dtsi"
+#include "gsm-sim7000e-n.dtsi"
