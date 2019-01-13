@@ -1,0 +1,16 @@
+/*
+ * Common parameters for SIM7000E-N NB-IoT-only modems
+ */
+
+/ {
+    fragment-gsm-sim7000e-n-description {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            gsm {
+                model = "sim7000e-n";
+                type = "nb-iot";
+            };
+        };
+    };
+};

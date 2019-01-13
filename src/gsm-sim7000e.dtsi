@@ -1,0 +1,16 @@
+/*
+ * Common parameters for SIM7000E NB-IoT + eMTC + EDGE modems
+ */
+
+/ {
+    fragment-gsm-sim7000e-description {
+        target-path = "/wirenboard";
+
+        __overlay__ {
+            gsm {
+                model = "sim7000e";
+                type = "nb-iot", "emtc", "edge", "gprs";
+            };
+        };
+    };
+};
