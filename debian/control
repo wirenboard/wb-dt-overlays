@@ -4,8 +4,9 @@ Section: misc
 Priority: optional
 Standards-Version: 3.9.2
 Build-Depends: debhelper (>= 9), pkg-config, build-essential, device-tree-compiler (>= 1.4.4-1)
+Homepage: https://github.com/wirenboard/wb-dt-overlays/
 
 Package: wb-dt-overlays
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, linux-image-wb2 (>= 4.9+wb20180718154205) | linux-image-wb6 (>= 4.9+wb20180718154205)
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-image-wb2 (>= 4.9+wb20180718154205) | linux-image-wb6 (>= 4.9+wb20180718154205) | linux-image-wb7
 Description: Device tree overlays for Wiren Board devices
