@@ -1,3 +1,9 @@
+wb-dt-overlays (1.4.0) stable; urgency=medium
+
+  * add dependency on linux-image-wb7
+
+ -- Nikita Maslov <nikita.maslov@wirenboard.ru>  Wed, 08 Dec 2021 22:49:50 +0300
+
 wb-dt-overlays (1.3) stable; urgency=medium
 
   * add overlays for NB-IoT modems
