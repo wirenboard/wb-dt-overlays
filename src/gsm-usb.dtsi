@@ -1,0 +1,14 @@
+/*
+ * Dummy overlay which turns modem-usb node on
+ * wb-gsm looks here in userspace
+ */
+
+/ {
+    fragment-usb {
+        target = <&wbc_modem>;
+
+        __overlay__ {
+            status = "okay";
+        };
+    };
+};

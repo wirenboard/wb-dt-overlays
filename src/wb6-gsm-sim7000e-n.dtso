@@ -3,4 +3,5 @@
 /plugin/;
 
 #include "wb6-gsm.dtsi"
+#include "gsm-usb.dtsi"
 #include "gsm-sim7000e-n.dtsi"
