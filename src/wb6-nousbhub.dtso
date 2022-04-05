@@ -1,0 +1,31 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * Specific version of wb6.x without USB-hub:
+ *     wifi is disabled;
+ *     wbc-modem is connected to 1st port of SoC's usb
+ */
+
+#include "nowifi.dtsi"
+
+/ {
+    fragment-disable-usbhub {
+        target = <&usbotg2>;
+        __overlay__ {
+            usb-hub@1 {
+                status = "disabled";
+            };
+        };
+    };
+
+    fragment-bind-modem {
+        target = <&usbotg2>;
+        __overlay__ {
+            wbc-modem@1 {  // all modem's params exist in old node (on disabled usb hub)
+                compatible = "wirenboard,wbc-usb";
+                reg = <1>;
+            };
+        };
+    };
+};
