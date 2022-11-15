@@ -1,3 +1,9 @@
+wb-dt-overlays (1.6.0) stable; urgency=medium
+
+  * wb7: add wb7-noeth1 overlay
+
+ -- Nikita Maslov <nikita.maslov@wirenboard.ru>  Tue, 15 Nov 2022 21:17:59 +0600
+
 wb-dt-overlays (1.5.0) stable; urgency=medium
 
   * turning on wbc_modem node in wb6's: sim5300e, sim7000e, sim7000e-n overlays
