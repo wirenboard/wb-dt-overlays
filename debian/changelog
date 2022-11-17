@@ -1,6 +1,6 @@
 wb-dt-overlays (1.6.0) stable; urgency=medium
 
-  * wb7: add wb7-noeth1 overlay
+  * add generic noeth1 overlay
 
  -- Nikita Maslov <nikita.maslov@wirenboard.ru>  Tue, 15 Nov 2022 21:17:59 +0600
 

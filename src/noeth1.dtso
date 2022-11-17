@@ -2,10 +2,10 @@
 /plugin/;
 
 / {
-    description = "Disable eth1 on Wiren Board";
+    description = "Disable ethernet1";
 
     fragment@0 {
-        target = <&wb_eth1>;
+        target = <&ethernet1>;
         __overlay__ {
             status = "disabled";
         };
