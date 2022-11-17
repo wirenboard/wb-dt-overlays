@@ -1,0 +1,13 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    description = "Disable ethernet1";
+
+    fragment@0 {
+        target = <&ethernet1>;
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};
