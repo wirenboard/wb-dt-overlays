@@ -1,3 +1,9 @@
+wb-dt-overlays (1.7.0) stable; urgency=medium
+
+  * add dependency on linux-image-wb8
+
+ -- Nikolay Korotkiy <nikolay.korotkiy@wirenboard.com>  Thu, 14 Mar 2024 09:30:00 +0400
+
 wb-dt-overlays (1.6.0) stable; urgency=medium
 
   * add generic noeth1 overlay
