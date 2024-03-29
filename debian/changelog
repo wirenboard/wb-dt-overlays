@@ -1,3 +1,9 @@
+wb-dt-overlays (1.6.1) stable; urgency=medium
+
+  * version bump, no functional changes
+
+ -- Aleksandr Kazadaev <aleksandr.kazadaev@wirenboard.com>  Fri, 29 Mar 2024 15:25:59 +0500
+
 wb-dt-overlays (1.6.0) stable; urgency=medium
 
   * add generic noeth1 overlay
